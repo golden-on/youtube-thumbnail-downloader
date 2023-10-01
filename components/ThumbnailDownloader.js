@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import styles from './ThumbnailDownloader.module.css';
+import Image from 'next/image';
 
 const ThumbnailDownloader = () => {
   const [videoUrl, setVideoUrl] = useState('');
@@ -82,7 +83,7 @@ const ThumbnailDownloader = () => {
         {/* <div className={styles.thumbnailContainer}> */}
         {thumbnailUrl && (thumbnailSizes.map((size) => (
           <div className={styles.downloadContainer}  key={size}>
-            <img
+            <Image
               src={`https://img.youtube.com/vi/${videoId}/${size}.jpg`}
               alt={`Thumbnail ${size}`}
               className={styles.thumbnail}
