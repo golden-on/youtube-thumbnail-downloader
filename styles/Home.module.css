@@ -1,0 +1,14 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftSide, .rightSide {
+    width: 25%; /* Adjust width according to your design */
+  }
+
+  
+  
