@@ -104,7 +104,7 @@ const ThumbnailDownloader = () => {
 
           <section>
             <h2>How to Utilize this YouTube Thumbnail Downloader?</h2>
-            <p>Using this YouTube thumbnail downloader is straightforward. Copy the YouTube video link for which you need a thumbnail. Paste the URL into the provided input box, and the tool will automatically generate thumbnails in different sizes. Click on the 'Download Thumbnail' button to save the thumbnail to your device. For Android users, simply save the images, while iPhone users may need to follow alternative steps.</p>
+            <p>Reusing YouTube thumbnails is not considered SEO-friendly, as Google indexes almost all thumbnails available on YouTube. Identifying uniqueness is a challenge, making reused thumbnails less effective for SEO. However, you can enhance your thumbnail&apos;s uniqueness by applying distinct effects using tools like Photoshop, making it SEO-friendly once again.</p>
           </section>
 
           <section>
