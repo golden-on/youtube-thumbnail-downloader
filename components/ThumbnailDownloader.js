@@ -97,35 +97,35 @@ const ThumbnailDownloader = () => {
           </div>
         )))}
         <div className={styles.content}>
-          <section>
-            <h2>Why Use this YouTube Thumbnail Grabber?</h2>
-            <p>This YouTube thumbnail downloader allows users to easily extract thumbnails from YouTube videos. These thumbnails can be utilized in presentations, animations, and various creative projects.</p>
-          </section>
+        <section>
+          <h2>Why Use this YouTube Thumbnail Grabber?</h2>
+          <p>This YouTube thumbnail downloader allows users to easily extract thumbnails from YouTube videos. These thumbnails can be utilized in presentations, animations, and various creative projects.</p>
+        </section>
 
-          <section>
-            <h2>How to Utilize this YouTube Thumbnail Downloader?</h2>
-            <p>Reusing YouTube thumbnails is not considered SEO-friendly, as Google indexes almost all thumbnails available on YouTube. Identifying uniqueness is a challenge, making reused thumbnails less effective for SEO. However, you can enhance your thumbnail&apos;s uniqueness by applying distinct effects using tools like Photoshop, making it SEO-friendly once again.</p>
-          </section>
+        <section>
+          <h2>How to Utilize this YouTube Thumbnail Downloader?</h2>
+          <p>Reusing YouTube thumbnails is not considered SEO-friendly, as Google indexes almost all thumbnails available on YouTube. Identifying uniqueness is a challenge, making reused thumbnails less effective for SEO. However, you can enhance your thumbnail&apos;s uniqueness by applying distinct effects using tools like Photoshop, making it SEO-friendly once again.</p>
+        </section>
 
-          <section>
-            <h2>Is Downloading YouTube Thumbnails Legal?</h2>
-            <p>Yes, downloading YouTube video thumbnails is 100% legal. However, it&quot;s important to note that both thumbnails and videos are copyrighted materials. To reuse them, you should seek permission from the original content creator.</p>
-          </section>
+        <section>
+          <h2>Is Downloading YouTube Thumbnails Legal?</h2>
+          <p>Yes, downloading YouTube video thumbnails is 100% legal. However, it&apos;s important to note that both thumbnails and videos are copyrighted materials. To reuse them, you should seek permission from the original content creator.</p>
+        </section>
 
-          <section>
-            <h2>Compatibility of this YouTube Thumbnail Grabber</h2>
-            <p>This YouTube thumbnail downloader is compatible with all devices except for iPhones, as iPhones have restrictions on saving images directly. For iPhone users with jailbroken devices, this restriction can be bypassed. The tool works smoothly on various Android devices, laptops, and desktop systems.</p>
-          </section>
+        <section>
+          <h2>Compatibility of this YouTube Thumbnail Grabber</h2>
+          <p>This YouTube thumbnail downloader is compatible with all devices except for iPhones, as iPhones have restrictions on saving images directly. For iPhone users with jailbroken devices, this restriction can be bypassed. The tool works smoothly on various Android devices, laptops, and desktop systems.</p>
+        </section>
 
-          <section>
-            <h2>Copyright Considerations for YouTube Thumbnails</h2>
-            <p>Every YouTube screenshot you download is subject to the copyright of the respective video owner. If you intend to use it in your work, obtaining proper permissions is essential. Reusing YouTube thumbnails, especially on YouTube itself, may lead to copyright issues. However, using them outside of YouTube, such as on websites for creating logos or other design work, generally poses no problems. To ensure compliance and avoid copyright concerns, it&apos;s advisable to request permission for usage.</p>
-          </section>
+        <section>
+          <h2>Copyright Considerations for YouTube Thumbnails</h2>
+          <p>Every YouTube screenshot you download is subject to the copyright of the respective video owner. If you intend to use it in your work, obtaining proper permissions is essential. Reusing YouTube thumbnails, especially on YouTube itself, may lead to copyright issues. However, using them outside of YouTube, such as on websites for creating logos or other design work, generally poses no problems. To ensure compliance and avoid copyright concerns, it&apos;s advisable to request permission for usage.</p>
+        </section>
 
-          <section>
-            <h2>Are Reused YouTube Thumbnails SEO-Friendly?</h2>
-            <p>Reusing YouTube thumbnails is not considered SEO-friendly, as Google indexes almost all thumbnails available on YouTube. Identifying uniqueness is a challenge, making reused thumbnails less effective for SEO. However, you can enhance your thumbnail&quot;s uniqueness by applying distinct effects using tools like Photoshop, making it SEO-friendly once again.</p>
-          </section>
+        <section>
+          <h2>Are Reused YouTube Thumbnails SEO-Friendly?</h2>
+          <p>Reusing YouTube thumbnails is not considered SEO-friendly, as Google indexes almost all thumbnails available on YouTube. Identifying uniqueness is a challenge, making reused thumbnails less effective for SEO. However, you can enhance your thumbnail&apos;s uniqueness by applying distinct effects using tools like Photoshop, making it SEO-friendly once again.</p>
+        </section>
         </div>
       </div>
     </>
