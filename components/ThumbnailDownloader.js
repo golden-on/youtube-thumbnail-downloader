@@ -68,7 +68,7 @@ const ThumbnailDownloader = () => {
       <div className={styles.thumbnailDownloader}>
         <header className={styles.header}>
           <h1>Download High-Quality Thumbnails for YouTube and Vimeo Videos</h1>
-          <p>Download thumbnail images of all quality for free. Just paste the video URL below and click 'Download Thumbnail Image'.</p>
+          <p>Download thumbnail images of all quality for free. Just paste the video URL below and click &apos;Download Thumbnail Image&apos;.</p>
         </header>
         <input
           type="text"
@@ -86,6 +86,9 @@ const ThumbnailDownloader = () => {
             <Image
               src={`https://img.youtube.com/vi/${videoId}/${size}.jpg`}
               alt={`Thumbnail ${size}`}
+              width={240}
+              height={100}
+              sizes='100'
               className={styles.thumbnail}
             />
             <button onClick={() => downloadImage(thumbnailUrl, `${size}_thumbnail.jpg`)} className={styles.downloadButton}>

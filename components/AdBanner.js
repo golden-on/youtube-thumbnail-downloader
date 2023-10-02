@@ -4,7 +4,7 @@ import React from 'react';
 const AdBanner = () => {
   return (
     <div className="ad-banner">
-      <Image src='https://www.5banners.com/store/img/cms/160x600N.gif' alt='banner' />
+      <Image width={250} height={200} src='https://www.5banners.com/store/img/cms/160x600N.gif' alt='banner' />
     </div>
   );
 };
