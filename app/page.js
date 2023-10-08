@@ -8,11 +8,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className={styles.leftSide}>
-        <AdBanner direction="left" keys="fdc056ec88a9ae30c394fd62e5a2f255" />
+        <AdBanner direction="left" keys="bd9ab2950991019c8cb06f82edc31734" />
       </div>
       <ThumbnailDownloader className={styles.container}/>
       <div className={styles.rightSide}>
-        <AdBanner direction="right" keys="fdc056ec88a9ae30c394fd62e5a2f255"/>
+        <AdBanner direction="right" keys="bd9ab2950991019c8cb06f82edc31734"/>
       </div>
     </Layout>
   );
