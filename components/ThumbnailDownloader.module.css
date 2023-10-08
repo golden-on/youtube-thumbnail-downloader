@@ -78,3 +78,12 @@
     flex-flow: column;
     align-items: center;
   }
+  @media (max-width: 767px) {
+    .button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .header h1 {
+        font-size: 23px;
+    }
+  }

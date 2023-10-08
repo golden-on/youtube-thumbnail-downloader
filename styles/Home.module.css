@@ -9,6 +9,9 @@
   .leftSide, .rightSide {
     width: 25%; /* Adjust width according to your design */
   }
-
-  
+  @media (max-width: 767px) {
+    .leftSide, .rightSide {
+      width: 50%;
+    }
+  }
   

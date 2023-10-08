@@ -39,4 +39,9 @@
   .mainContent {
     width: 50%; /* Adjust width according to your design */
   }
+  @media (max-width: 767px) {
+    .logo {
+      font-size: 16px;
+    }
+  }
   
