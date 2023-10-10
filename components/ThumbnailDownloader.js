@@ -9,12 +9,6 @@ const ThumbnailDownloader = () => {
   const [videoId, setVideoId] = useState('');
 
   const thumbnailSizes = ['maxresdefault', 'sddefault', 'hqdefault', 'mqdefault'];
-  const sizesObj = {
-    maxresdefault : '1280x720',
-    sddefault : '640x480',
-    hqdefault : '480x360',
-    mqdefault : '320x180'
-  }
 
   const extractThumbnailUrl = (videoUrl, size) => {
     const videoIdRegex = /(?:https:\/\/)?(?:www\.)?youtube\.com\/(?:.*v=|.*vi=|.*watch\?v=|.*embed\/|.*youtu.be\/|.*v\/|.*e\/|.*u\/\w\/|.*watch\?feature=player_embedded&v=|.*videos\/|.*upload.*\/|v%3D|^youtu\.be\/)([^#\&\?\n]*).*/;
@@ -29,10 +23,11 @@ const ThumbnailDownloader = () => {
     return null;
   };
 
-  const handleDownload = (size) => {
+  const handleDownload = async (size) => {
     const thumbnailUrl = extractThumbnailUrl(videoUrl, size);
     if (thumbnailUrl) {
       setThumbnailUrl(thumbnailUrl);
+      await downloadImage(thumbnailUrl, `${size}_thumbnail.jpg`);
     } else {
       console.error('Invalid YouTube video URL');
     }
@@ -40,23 +35,27 @@ const ThumbnailDownloader = () => {
 
   const downloadImage = async (url, filename) => {
     try {
-      const response = await fetch(url, {mode: 'no-cors'});
+      const response = await fetch(url, { mode: 'cors' });
       const blob = await response.blob();
       const objectURL = URL.createObjectURL(blob);
-  
+
       const link = document.createElement('a');
       link.href = objectURL;
       link.download = filename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-  
-      URL.revokeObjectURL(objectURL);  // Clean up the object URL after use
+
+      URL.revokeObjectURL(objectURL);
     } catch (error) {
       console.error('Error downloading image:', error);
     }
   };
   
+  
+  
+
+
   
 
   const handleInputChange = (e) => {
@@ -80,9 +79,8 @@ const ThumbnailDownloader = () => {
         <button onClick={() => handleDownload('maxresdefault')} className={styles.button}>
           Download Thumbnail Image (Max Resolution)
         </button>
-        {/* <div className={styles.thumbnailContainer}> */}
         {thumbnailUrl && (thumbnailSizes.map((size) => (
-          <div className={styles.downloadContainer}  key={size}>
+          <div className={styles.downloadContainer} key={size}>
             <Image
               src={`https://img.youtube.com/vi/${videoId}/${size}.jpg`}
               alt={`Thumbnail ${size}`}
@@ -92,7 +90,7 @@ const ThumbnailDownloader = () => {
               className={styles.thumbnail}
             />
             <button onClick={() => downloadImage(thumbnailUrl, `${size}_thumbnail.jpg`)} className={styles.downloadButton}>
-              Download {sizesObj[size]}
+              Download {size}
             </button>
           </div>
         )))}
@@ -133,3 +131,4 @@ const ThumbnailDownloader = () => {
 };
 
 export default ThumbnailDownloader;
+
