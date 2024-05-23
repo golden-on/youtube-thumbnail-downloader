@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
@@ -15,7 +16,10 @@ export const metadata = {
  function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <SpeedInsights />
+      </body>
       <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
