@@ -1,5 +1,6 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,13 @@ export const metadata = {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <Script
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+        async
+        src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2101857678803942"
+      />
     </html>
   )
 }
